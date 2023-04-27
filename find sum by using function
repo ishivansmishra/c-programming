@@ -1,10 +1,11 @@
 #include<stdio.h>
+// find sum of two values of a and b by using basics of function.
 int sum(int a,int b);
 int main () {
     int a,b;
-    printf("enter the value of a : ");
+    printf("enter the value of A : ");
     scanf("%d",&a);
-    printf("enter the value of b : ");
+    printf("enter the value of B : ");
     scanf("%d",&b);
 
     int x = sum(a,b);
