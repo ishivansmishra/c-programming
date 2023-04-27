@@ -1,2 +1,2 @@
-# c-programming
-find sum  by using function
+# c-programming.
+all solutions of c language.
