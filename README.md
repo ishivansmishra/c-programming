@@ -1,2 +1,2 @@
 # c-programming.
-all solutions of c language.
+ALL PROBLEMS OF C PROGRAMMING.
