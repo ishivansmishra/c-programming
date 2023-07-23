@@ -1,0 +1,12 @@
+#include<stdio.h>
+//volume of cube
+int main (){
+    int side;
+    printf("enter side :");
+    scanf("%d",&side);
+
+    int x=side*side*side;
+    printf("volume is : %d", x);
+
+    return 0;
+}
