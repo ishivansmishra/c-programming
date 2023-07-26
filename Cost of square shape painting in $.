@@ -1,0 +1,11 @@
+#include<stdio.h>
+// cost of square shape painting in $.
+
+int main (){
+    int side = 7;
+    int area = side * side;
+    int cost = area * 10;
+    printf("%d \n",area);
+    printf("%d ",cost);
+    printf("$");
+}
