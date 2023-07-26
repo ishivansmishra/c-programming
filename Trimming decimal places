@@ -1,0 +1,10 @@
+#include<stdio.h>
+//Trimming decimal places.
+int main (){
+    double number = 2.2336543;
+    printf("%0.2f",number);
+
+    return 0;
+}
+
+
