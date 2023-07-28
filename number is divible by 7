@@ -1,0 +1,11 @@
+#include<stdio.h>
+// number is divisible by7
+int main (){
+    int x;
+    printf("enter value of a : ");
+    scanf("%d",&x);
+
+    printf("print : %d", x%7==0);
+
+    return 0;
+}
