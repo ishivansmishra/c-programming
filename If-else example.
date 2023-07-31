@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+// If else condition
+int main (){
+    int a;
+    printf("enter a : ");
+    scanf("%d",&a);
+
+   
+    if(a%2==0)
+    {
+       printf("true \n");
+    }
+   else
+   {
+    printf("false");
+   }
+   
+
+    return 0;
+}
