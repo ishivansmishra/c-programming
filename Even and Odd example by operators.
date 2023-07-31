@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+// EVEN and ODD example by operators.
+int main (){
+  int x;
+  printf("enter x : ");
+  scanf("%d",&x);
+  
+ /*   even -->> 1
+ odd -->> 0     */
+
+  printf("%d",x%2==0);
+  return 0;
+}
