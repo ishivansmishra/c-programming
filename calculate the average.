@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+//calculate the average.
+int main (){
+    float a;
+  printf("enter a :");
+  scanf("%f",&a);
+
+ float b;
+  printf("enter b : ");
+  scanf("%f",&b);
+
+  float  c;
+  printf("enter c :");
+  scanf("%f",&c);
+
+  float average = (a+b+c) / 3;
+  printf("average is : %f",average);
+
+  return 0;
+}
