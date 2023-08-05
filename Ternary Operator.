@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+// Ternary Operator.
+
+int main (){
+    int marks;
+    printf("Enter Age : ");
+    scanf("%d",&marks);
+
+    marks >= 33 ? printf("PASS \n"): printf("FAIL");
+
+    return 0;
+}
