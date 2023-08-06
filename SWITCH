@@ -1,0 +1,66 @@
+#include<stdio.h>
+#include<math.h>
+// SWITCH
+int main (){
+    int month;
+    printf("enter month (1-12) : ");
+    scanf("%d \n",&month);
+/*1--JANUARY
+2-- FEBRUARY
+3-- MARCH
+4--APRIL
+5 -- MAY
+6 -- JUNE
+7 -- JULY
+8 -- AUGUST
+9 -- SEPTEMBER
+10 -- OCTOBER
+11 -- NOVEMBER
+12 -- DECEMBER
+*/
+
+    switch (month) {
+        case 1 : printf("JANUARY \n" );
+        break;
+
+        case 2 : printf("FEBRUARY \n");
+        break ;
+
+        case 3 : printf("MARCH \n");
+        break;
+
+        case 4 : printf("APRIL \n");
+        break;
+
+        case 5 : printf("MAY \n");
+        break;
+
+        case 6 : printf("JUNE \n");
+        break;
+
+        case 7 : printf("JULY \n");
+        break;
+
+        case 8 : printf("AUGUST \n");
+        break;
+         
+        case 9 : printf("SEPTEMBER \n");
+        break;
+
+        case 10 : printf("OCTOBER \n");
+        break;
+
+        case 11 : printf("NOVEMBER \n");
+        break;
+
+        case 12 : printf("DECEMBER \n");
+        break;
+
+        default : printf("NOT A VALID YEAR \n");
+        printf("PLEASE ENTER A VALID NUMBER");
+        break;
+
+    }
+    printf("THANK YOU");
+
+}
