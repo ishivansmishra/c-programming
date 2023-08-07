@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+//check fail or pass.
+int main (){
+    int number;
+    printf("ENTER MARKS (0-100) : ");
+    scanf("%d",&number);
+
+    if(number >= 33 && number<=100){
+        printf("PASS");
+    } else if(number<33){
+        printf("FAIL");
+    } else {
+        printf("INVALID");
+    }
+   
+    return 0;
+}
