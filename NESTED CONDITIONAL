@@ -1,0 +1,26 @@
+include<stdio.h>
+#include<math.h>
+//NESTED CONDITIONAL.
+int main (){
+    int number;
+    printf("enter number : ");
+    scanf("%d",&number);
+
+    if(number >= 0){
+        printf("POSTIVE \n");
+        if(number % 2 == 0){
+            printf("even \n");           
+        } else {
+            printf("ODD");
+        } 
+    } else {
+        printf("NEGATIVE \n");
+        if (number % 2 == 0){
+            printf("EVEN \n");
+        }else {
+            printf("ODD");
+        }
+    }
+    
+    return 0;
+}
