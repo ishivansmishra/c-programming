@@ -1,0 +1,11 @@
+#include<Stdio.h>
+// find fahrenheit.
+int main(){
+    float celsius;
+    printf("Enter celsius : ");
+    scanf("%f",&celsius);
+
+    float fahrenheit = (celsius * 9/5) + 32;
+    printf("FAHRENHEIT IS : %f",fahrenheit);
+    return 0;
+}
