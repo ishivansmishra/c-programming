@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<math.h>
+//Simple calculator.
+int main(){
+// define first number.
+    float a;
+    printf("enter a : ");
+    scanf("%f",&a);
+
+// define operator.
+    char operator;
+    printf("enter operator (+,-,/,*) : ");
+    scanf("%s",&operator);
+
+// define second number.
+    float b;
+    printf("enter b : ");
+    scanf("%f",&b);
+
+    //define result.
+    int result;
+
+    switch(operator){
+        case '+' : result = a+b;
+        break;
+
+        case '-' : result = a-b;
+        break;
+
+        case '*' : result = a*b;
+        break;
+
+        case '/' : if(b != 0){
+           result = a/b;
+        } else{
+            printf("ERROR");
+        }
+        break;
+        default : printf("ERROR : invalid");
+        break;
+
+    }
+    printf("result is :%d",result);
+    return 0;
+
+}
