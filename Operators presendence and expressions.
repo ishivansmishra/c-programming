@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<math.h>
+//Operators presendence and expressions.
+int main (){
+    int a;
+    printf("enter a : ");
+    scanf("%d",&a);
+int b;
+    printf("enter b : ");
+    scanf("%d",&b);
+int c;
+    printf("enter c : ");
+    scanf("%d",&c);
+
+    int x = (a+b*c)/(b-a*c);
+    
+    printf("result is : %d",x);
+    return 0;
+}
