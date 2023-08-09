@@ -1,0 +1,11 @@
+#include<stdio.h>
+//Do while loop.
+int main () {
+    int i = 1;
+     do {
+        printf("Hello world \n");
+        i++;
+     } while(i<=100);
+
+    return 0;
+}
