@@ -1,0 +1,22 @@
+#include<stdio.h>
+//increament and decrement.
+int main (){
+    int number;
+    printf("Enter number : ");
+    scanf("%d",&number);
+
+    printf("value: %d \n",number);
+
+    number++;
+    printf("post increament : %d \n",number);
+
+    ++number;
+    printf("pre increament : %d \n",number);
+
+    number--;
+    printf("post increament : %d \n",number);
+
+    --number;
+    printf("pre increament : %d \n",number);
+    return 0;
+}
