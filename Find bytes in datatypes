@@ -1,0 +1,20 @@
+#include<stdio.h>
+//find bytes in datatypes.
+int main()
+{
+  
+    printf("%1u \n", sizeof(long double));
+    printf("%1u \n",sizeof(char));
+    printf("%1u \n",sizeof(signed));
+    printf("%1u \n",sizeof(double));
+    printf("%1u \n",sizeof(short int));
+    printf("%1u \n",sizeof(unsigned));
+    printf("%1u \n",sizeof(float));
+    printf("%1u \n",sizeof(long int));
+    printf("%1u \n",sizeof(unsigned long int));
+    printf("%1u \n",sizeof(signed long int));
+    printf("%1u \n",sizeof(signed short int));
+    printf("%1u \n",sizeof(unsigned short int));
+
+    return 0;
+}
