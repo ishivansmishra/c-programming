@@ -1,0 +1,21 @@
+#include<stdio.h>
+//bitwise operator.
+int main()
+{  
+    int a;
+    printf("Enter a : ");
+    scanf("%d",&a);
+
+    int b;
+    printf("enter b : ");
+    scanf("%d",&b);
+
+    // & operators.
+    printf("%d \n", a&b);
+    // | operators.
+    printf("%d \n",a|b);
+    // ^ operators
+    printf("%d \n",a^b);
+
+    return 0;
+}
