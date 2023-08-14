@@ -14,7 +14,7 @@ int main() {
             factorial *= i;
         }
 
-        printf("Factorial of %d is %llu\n", num, factorial);
+        printf("Factorial of %d is %lu\n", num, factorial);
     }
 
     return 0;
