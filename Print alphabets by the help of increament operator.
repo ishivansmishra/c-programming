@@ -1,0 +1,8 @@
+#include<stdio.h>
+// Print alphabets by the help of increament operator.
+int main (){
+   for(char ch = 'A';ch<='Z';ch++){
+    printf("%c\n",ch);
+   }
+    return 0;
+}
