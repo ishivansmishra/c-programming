@@ -1,0 +1,16 @@
+#include<stdio.h>
+// Print Inverted Right-Angled Triangle with asterisks.
+int main (){
+    int number;
+    printf("Enter number : ");
+    scanf("%d",&number);
+
+    for(int i = number;i>=i;i--){
+        for(int j = i;j<=1;j++ ){
+            printf("*");
+        }
+        printf("*");
+    }
+
+    return 0;
+}
