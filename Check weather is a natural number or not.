@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+// check weather is a natural number or not.
+int main (){
+    int number;
+    printf("Enter Number : ");
+    scanf("%d",&number);
+
+    if(number >= 1){
+        printf("Natural number");
+    }
+    else {
+        printf("Not a Natural number");
+    }
+    return 0;
+}
