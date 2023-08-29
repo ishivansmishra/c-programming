@@ -1,0 +1,20 @@
+#include<stdio.h>
+// Find Percentage of two numbers.
+int main (){
+    double x ; // obtained Numbers;
+    printf("Enter Obtained Numbers : ");
+    scanf("%lf",&x);
+
+    double y; // Total numbers
+    printf("Enter Total Numbers : ");
+    scanf("%lf",&y);
+
+    double percent = (x/y)*100;
+    printf("%lf percentage \n",percent);
+
+
+     if(x>y){
+        printf("Invalid");
+     }
+    return 0;
+}
