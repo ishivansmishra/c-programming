@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+#include<math.h>
+
+//Find Compound Interest.
+
+int main (){
+    double p;
+    printf("Enter Principle : ");
+    scanf("%lf",&p);
+
+    double r;
+    printf("Enter Rate : ");
+    scanf("%lf",&r);
+
+    double t;
+    printf("Enter Time : ");
+    scanf("%lf",&t);
+
+    double amount = p * ((pow((1 + r / 100),t)));
+
+    double CI = amount - p;
+
+    printf("Compound Interest : %lf",CI);
+
+    return 0;
+}
