@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+//find Simple interest
+
+int main (){
+    float p; 
+    printf("enter Principle value : ");
+    scanf("%f",&p);
+
+    float r;
+    printf("Enter Rate : ");
+    scanf("%f",&r);
+
+    float t;
+    printf("Enter Time : ");
+    scanf("%f",&t);
+
+    float si = ( p * r * t)/100;
+    printf("SIMPLE INTEREST IS : %f \n",si);
+
+    return 0;
+}
