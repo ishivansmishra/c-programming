@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<math.h>
+
+// Find lcm of any numbers.
+
+int main (){
+    int i,max,lcm=1;
+
+    int num1;
+    printf("Enter Number : ");
+    scanf("%d",&num1);
+
+    int num2;
+    printf("Enter Number : ");
+    scanf("%d",&num2);
+
+    max = (num1>num2) ? num1 : num2;
+
+    i = max ;
+
+    while(1)
+    {
+        if(i % num1 == 0 && i%num2 == 0 )
+        {
+            lcm = i;
+            break;
+        }
+        i += max;
+    }
+        printf("The LCM of %d and %d is = %d",num1,num2,lcm);
+
+    return 0;
+}
