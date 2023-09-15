@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+
+// Print Factor of any number.
+
+int main ()
+{
+    int i,num;
+    printf("Enter Any Number To find its factor : ");
+    scanf("%d",&num);
+
+    printf("The Factor of %d is : \n",num);
+
+    for(int i = 1; i <= num;i++)
+    {
+
+        if(num % i == 0)
+        {
+            printf("%d, ",i);
+        }
+    }
+
+    return 0;
+}
