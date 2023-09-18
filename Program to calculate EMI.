@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+#include<math.h>
+
+//Program to calculate EMI.
+
+int main (){
+    float principle,rate,time,emi;   
+
+    printf("Enter Principle : ");
+    scanf("%f",&principle);
+
+    printf("Enter Rate : ");
+    scanf("%f",&rate);
+
+    printf("Enter Time : ");
+    scanf("%f",&time);
+
+    rate = rate/(12*100);    // One month interest.
+
+    time =(time * 12); //One month period.
+
+    emi = (principle * rate * pow(1+rate,time)) / (pow(1+rate,time)-1);
+
+    printf("Monthly EMI is = %f \n",emi);
+   
+
+    return 0;
+}
