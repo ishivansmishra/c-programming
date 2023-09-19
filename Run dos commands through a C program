@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<math.h>
+#include<process.h>
+
+//Run dos commands through a C program
+
+
+int main ()
+
+{
+      int choice = 0;
+      printf("\n   **********************************************   \n");
+      printf("1. Open Notepad...\n");
+      printf("2. Get Ip Address  ...\n");
+      printf("3. Shut Down the computer...\n");
+
+      printf("Enter the choices : ");
+      scanf("%d",&choice);
+
+      switch(choice)
+      {
+         case 1 : 
+                system("Notepad\n");
+                break;
+         case 2 : 
+               system("ipconfig\n");
+               system("pause\n");
+               break;
+
+         case 3 : 
+               system("ShutDown -S \n");
+               system("Pause");
+               break;
+
+
+         default  :
+            printf("\n Invalid choice !!!");  
+            break;                            
+      }
+
+   return 0;
+}
