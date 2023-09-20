@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+
+// Identify a key is pressed
+
+int main (){
+      char ch;
+
+      while(1)
+      {
+            printf("Enter Any key : ");
+            ch = fgetc(stdin);
+            if(ch==0x0A)
+            {
+                  printf("Enter Key : ");
+                  break;
+
+            }
+            else 
+            {
+                  printf("%c is pressed. \n", ch);
+            }
+            ch = getchar();
+      }      
+
+      return 0;
+}
