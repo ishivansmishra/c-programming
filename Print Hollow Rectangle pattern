@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int main(){
+      int column,rows,a,b;
+
+      printf("Enter Rows : ");
+      scanf("%d",&rows);
+
+      printf("Enter Column : ");
+      scanf("%d",&column);
+
+      for(a=0;a<rows;a++)
+      {
+
+      
+      for(b=0;b<column;b++){
+            if(a==0 || a==rows-1 || b==0 || b==column-1)
+                  printf("*");
+            
+            else
+                  printf(" ");
+      }
+            printf("\n");
+      
+
+      }
+      return 0;
+}
