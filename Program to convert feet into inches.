@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+// Program to convert feet into inches.
+
+int main (){
+    int feet,inches;
+    printf("Enter Feet : ");
+    scanf("%d",&feet);
+
+    inches = feet*12;
+
+    printf("\n The inches will be : %d ", inches);
+
+    return 0;
+}
