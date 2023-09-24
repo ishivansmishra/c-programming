@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<math.h>
+
+// Program to check the perfect square of any number.
+
+int main () 
+{
+    int num;
+    int ivar;
+    float fvar;
+
+    printf("Enter Number : ");
+    scanf("%d",&num);
+    
+    fvar = sqrt((double)num);
+    ivar = fvar;
+    
+    if(ivar == fvar)
+    {
+        printf("The Entered number [%d] is a Perfect Square. \n",num);
+
+    } 
+    else 
+    {
+        printf("The Entered number [%d] is not a perfect square. \n",num);
+    }
+    return 0;
+}
