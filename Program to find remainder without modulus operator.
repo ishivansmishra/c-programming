@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+
+// Program to find remainder without modulus operator.
+
+int main (){
+   int a,b,rem;
+
+   printf("\n Enter The First Number : ");
+   scanf("%d",&a);
+
+   printf("\n Enter The Second Number : ");
+   scanf("%d",&b);
+
+   rem = a-(a/b)*b;
+
+   printf("\n Remainder of [%d] & [%d] = %d\n",a,b,rem);
+
+    return 0;
+}
