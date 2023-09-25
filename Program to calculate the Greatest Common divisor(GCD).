@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+
+// Program to calculate the Greatest Common divisor(GCD).
+
+int main () 
+{
+    int num1,num2,i,gcd;
+    printf("Find GCD and HCF of the number\n ");
+    
+    printf("Enter First Number : ");
+    scanf("%d",&num1);
+
+    printf("Enter Second Number : ");
+    scanf("%d",&num2);
+
+    for(i=1;i<=num1 && i<=num2; ++i)
+    {
+        if(num1%i==0 && num2%i==0)
+        {
+            gcd = i;
+        }
+    }
+    printf("GCD of number %d and %d is : %d",num1,num2,gcd);
+    return 0;
+}
