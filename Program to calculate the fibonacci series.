@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+
+// Program to calculate the fibonacci series;
+
+int main () 
+{
+    int n,result,i;
+
+    int first = 0;
+    int second = 1;
+
+    printf("Enter Input : ");
+    scanf("%d",&n);
+
+    printf("The Fibonacci series : \n");
+
+    for(i=0;i<n;i++)
+    {
+        if(i<=1)
+        {
+            result = i;
+        }
+        else 
+        {
+            result = first + second;
+            first = second;
+            second = result;
+        }
+        printf("%d\n",result);
+    }
+    return 0;
+}
