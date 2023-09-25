@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+
+// Program to convert days into years,weeks and days.
+int main () 
+{
+    int days,years,weaks;
+
+    printf("Enter Days : ");
+    scanf("%d",&days);
+
+    years = (days / 365);
+    weaks = (days % 365) / 7;
+    days = days -((years * 365) + (weaks * 7));
+
+    printf("Years : %d\n",years);
+    printf("Weaks : %d\n",weaks);
+    printf("Days : %d\n",days);
+
+
+    return 0;
+}
