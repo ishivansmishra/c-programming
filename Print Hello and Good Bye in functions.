@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+// Print Hello and Good Bye in functions
+
+void printhello(); // Declaration of Function.
+
+
+int main ( ) {
+    
+     printhello ();
+        printhello ();
+           printhello ();
+              printhello ();                        // Function Call
+                 printhello ();
+                    printhello ();
+                       printhello ();
+                          printhello ();
+                             printhello ();
+                                printhello ();
+                                   printhello ();
+
+
+
+    return 0;
+}
+void printhello() {
+
+    printf("Hello\n");
+    printf("Good Bye \n");            // defination of function
+}
