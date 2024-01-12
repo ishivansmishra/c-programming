@@ -1,0 +1,42 @@
+#include<stdio.h>
+
+void bonjour();
+
+void namaste();
+
+int main ()
+{
+
+    printf("Enter I for indian and F for french : ");
+
+    char ch;
+
+    scanf("%c",&ch);
+
+    if(ch == 'I') 
+    {
+        bonjour ();
+    }
+    else if (ch == 'F') 
+    {
+        namaste ();
+    }
+    else
+    {
+        printf("ERROR\n");
+        printf("Try again");
+    }
+
+    return 0;
+}
+
+void bonjour ()
+
+{
+    printf("Bonjour");
+}
+
+void namaste () 
+{
+    printf("Namaste");
+}
