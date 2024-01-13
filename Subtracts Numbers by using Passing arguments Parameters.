@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+
+int subtract (int a, int b,int c);           // Function Declaration
+
+int main () {
+    int a,b,c;
+    printf("Enter The First Number : ");
+    scanf("%d",&a);
+
+    printf("Enter the second number : ");             
+    scanf("%d",&b);
+
+    printf("Enter The Third Number : ");
+    scanf("%d",&c);
+
+    int s = subtract(a,b,c);                      // Function Call
+
+    printf("subtract of three number is  : %d ",s);
+
+
+    return 0 ;
+}
+
+int subtract (int a,int b,int c) {
+    return a-b-c;                                // Function Definition
+}
