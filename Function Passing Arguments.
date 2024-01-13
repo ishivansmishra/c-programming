@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+
+int sum (int a, int b,int c);           // Function Declaration
+
+int main () {
+    int a,b,c;
+    printf("Enter The First Number : ");
+    scanf("%d",&a);
+
+    printf("Enter the second number : ");             
+    scanf("%d",&b);
+
+    printf("Enter The Third Number : ");
+    scanf("%d",&c);
+
+    int s = sum(a,b,c);                      // Function Call
+
+    printf("sum of three number is  : %d ",s);
+
+
+    return 0 ;
+}
+
+int sum (int a,int b,int c) {
+    return a+b+c;                                // Function Definition
+}
