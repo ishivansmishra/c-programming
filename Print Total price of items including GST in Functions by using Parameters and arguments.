@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<math.h>
+
+// Print GST in Functions by using Parameters and arguments
+
+void price(float values,float GST);                // Formal Parameters.
+
+int main ()
+ {
+    float values;
+    printf("Enter the price of items you brought : ");
+    scanf("%f",&values);
+
+    float GST;
+    printf("Enter The GST : ");
+    scanf("%f",&GST);
+
+    price(values,GST);                // Actual arguments.
+
+
+    return 0;
+}
+
+void price(float values,float GST)              // Formal Parameters.
+ { 
+    values = values + (GST/100*values);
+    printf("TOtal Price of items is : %f",values);
+}
