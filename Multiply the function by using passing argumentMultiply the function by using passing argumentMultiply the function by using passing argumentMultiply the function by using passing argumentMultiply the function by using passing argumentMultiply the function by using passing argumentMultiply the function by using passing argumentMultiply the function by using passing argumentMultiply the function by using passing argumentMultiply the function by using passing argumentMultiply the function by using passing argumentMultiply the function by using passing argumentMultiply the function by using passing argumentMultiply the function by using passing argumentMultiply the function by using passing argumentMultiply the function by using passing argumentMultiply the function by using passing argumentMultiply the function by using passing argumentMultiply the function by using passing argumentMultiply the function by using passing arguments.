@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+
+//Multiply the function by using passing arguments.
+
+int multiply(int a,int b) ;                // Function Declaration
+
+
+int main () {
+    int a,b;
+    printf("Enter First number : ");
+    scanf("%d",&a);
+
+    printf("Enter Second Number : ");
+    scanf("%d",&b);
+
+    int product = multiply(a,b);                        // Function Call
+    printf("The product of two numbers is : %d",product);
+
+
+    return 0;
+}
+
+int multiply(int a,int b){
+    return a*b;                                 // Function Defination
+}
