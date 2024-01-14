@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+
+//  Print table in passing arguments functions.
+
+void printTable(int n);
+
+int main ( ){
+    int n;
+    printf("Enter The Number : ");
+    scanf("%d",&n);
+
+      printTable(n); // Arguments
+
+
+    return 0;
+
+}
+
+
+
+void printTable(int n)   //Parameters
+{
+    for(int i = 1;i<=10;i++){
+        printf("%d\n",i*n);
+    }
+}
