@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+#include<math.h>
+
+// Use Library Function to calculate area of Square.
+
+int main () {
+
+    int n;
+    printf("Enter Side of Square  : ");
+    scanf("%d",&n);
+
+    printf("area of square is : %lf", pow(n,2));
+
+
+    
