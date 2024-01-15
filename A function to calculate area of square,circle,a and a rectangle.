@@ -1,0 +1,42 @@
+#include<stdio.h>
+
+float squareArea(float side);
+float circleArea(float radius);
+float rectangleArea(float a,float b);
+
+
+int main () {
+
+    float side;
+    printf("Enter Side of Square  : ");
+    scanf("%f",&side);
+
+    float radius;
+    printf("Enter the Radius : ");
+    scanf("%f",&radius);
+
+    float a,b;
+    printf("Enter A : ");
+    scanf("%f",&a);
+
+    printf("Enter B : ");
+    scanf("%f",&b);
+
+    printf("Area of Square is : %f\n",squareArea(side));
+    printf("Area of Circle is : %f\n",circleArea(radius));
+    printf("Area of Rectangle is : %f\n",rectangleArea(a,b));
+
+
+    return 0;
+}
+
+float squareArea(float side){
+    return side * side;
+}
+
+float circleArea(float radius){
+    return 3.14*radius*radius;
+}
+ float rectangleArea(float a,float b){
+    return a*b;
+ }
