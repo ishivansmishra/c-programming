@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+// Recursion .
+
+void printHW(int count);
+
+
+int main () {
+ 
+
+    printHW(8);
+
+
+    return 0;
+}
+
+
+// Recursive Functions.
+void printHW(int count){
+    if(count == 0){
+        return;
+    }
+    printf("Hello World\n");
+    printHW(count-1);
+
+}
