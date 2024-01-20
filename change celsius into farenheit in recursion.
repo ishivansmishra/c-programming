@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+
+// change celsius into farenheit 
+
+float farenheit(float celsius);            // Defination of function
+
+int main( ){
+    float celsius;
+    printf("Enter Celsius: ");
+    scanf("%f",&celsius);
+
+    printf("The Temperature in Farenheit : %f",farenheit(celsius));        // Function call
+
+    return 0;
+}
+
+
+float farenheit (float celsius){           // Defination of Function
+    float far = celsius * (9/5) + 32;
+    return far;
+}
