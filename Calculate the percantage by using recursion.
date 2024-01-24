@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<math.h>
+
+// Calculate the percantage by using recursion.
+
+float calculatepercentage(float science, float math,float hindi);      // Declaration of function
+
+int main (){
+  float science;
+  printf("Enter Science : ");
+  scanf("%f",&science);
+
+  float math;
+  printf("Enter Math : ");
+  scanf("%f",&math);
+
+  float hindi;
+  printf("Enter Hindi : ");
+  scanf("%f",&hindi);
+
+  printf("The Total Perentage is : %f",calculatepercentage(science,math,hindi));            // Function call
+
+  return 0;
+}
+
+float calculatepercentage(float science,float math, float hindi){                       // defination of function
+  
+  float total = (science + math + hindi) / 300;
+  float pertotal = total * 100;
+  
+  return pertotal;
+}
