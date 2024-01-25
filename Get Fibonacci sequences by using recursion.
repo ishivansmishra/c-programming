@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+// Get Fibonacci sequences by using recursion
+
+int fib (int n);     // declaration of function
+
+
+int main (){
+    int n;
+    printf("Enter N : ");
+    scanf("%d",&n);
+    fib(n);           // Function call
+    return 0;
+}
+
+int fib(int n){                // Defination of function
+    if(n == 0){
+        return 0;
+    } if(n == 1){
+        return 1;
+    }
+    int fibn1 = fib(n-1);
+    int fibn2 = fib (n-2);
+    int fibn = fibn1 + fibn2;
+     printf("The %d of fib is : %d\n",n,fibn);
+   
+    return fibn;
+
+}
+
