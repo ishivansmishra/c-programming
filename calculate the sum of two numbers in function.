@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+
+// calculate the sum of two numbers.
+
+int calculate(int n1,int n2);  // Declaration of function.
+
+
+int main(){
+    int n1,n2;
+    printf("Enter number : ");
+    scanf("%d",&n1);
+
+  printf("Enter number : ");
+    scanf("%d",&n2);
+
+    printf("The sum is : %d",calculate(n1,n2));  // Function call
+
+    return 0;
+}
+
+int calculate(int n1,int n2){
+   
+   
+    int totalsum = n1 + n2;
+    return totalsum; // defination of function.
+}
