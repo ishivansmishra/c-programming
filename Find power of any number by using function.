@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+
+int findpow(int n,int a);
+
+int main (){
+     int n;
+    printf("enter n : ");
+    scanf("%d",&n);
+
+      int a;
+    printf("enter n : ");
+    scanf("%d",&a);
+
+ printf("The squareroot of number is : %d",findpow(n,a));
+
+
+
+    return 0;
+}
+int findpow(int n,int a){
+    int total = pow(n,a);
+    return total;
+}
