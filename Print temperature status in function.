@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+void temperature_status(int temp);
+
+int main (){
+    int temp;
+    printf("Enter Temp : ");
+    scanf("%d",&temp);
+
+    temperature_status(temp);
+
+    return 0;
+}
+
+void temperature_status(int temp){
+    if(temp <= 0 && temp <=20){
+        printf("Hot");
+
+    } else if(temp > 20 && temp <= 30){
+        printf("Warm");
+    } else {
+        printf("hot");
+    }
+}
