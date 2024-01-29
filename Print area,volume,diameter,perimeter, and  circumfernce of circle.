@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<math.h>
+
+// Print area,volume,diameter,perimeter, and  circumfernce of circle.
+
+double area(double radius);
+double volume(double radius,double height);
+double diameter(double radius);                                    
+double perimeter(double radius);
+double circumference(double radius,double height);
+
+
+int main (){
+    double radius;
+    printf("Enter Radius : ");
+    scanf("%lf",&radius);
+
+    double height;
+    printf("Enter Height : ");
+    scanf("%lf",&height);
+
+    printf("The area of circle is : %lf\n",area(radius));
+   printf("The volume of circle is : %lf\n",volume(radius,height));
+   printf("The diameter of circle is : %lf\n",diameter(radius));
+   printf("The perimeter of circle is : %lf\n",perimeter(radius));
+   printf("The diameter of circle is : %lf\n",circumference(radius,height));
+
+   
+
+
+    return 0;
+}
+
+
+double area(double radius){
+    double totalarea = 3.14 * radius * radius;
+    return totalarea;
+}
+
+double volume(double radius, double height){
+    double totalvolume = 3.14 * radius * radius * height;
+    return totalvolume;
+}
+
+double diameter(double radius){
+    double totaldiameter = 2 * radius;
+    return totaldiameter;
+}
+
+
+double perimeter(double radius){
+    double totalperimeter = 2 * 3.14 * radius;
+    return totalperimeter;
+}
+double circumference(double radius,double height){
+    double totalcircumference = 2 * radius * height;
+    return totalcircumference;
+}
+
