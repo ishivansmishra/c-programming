@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+#include<math.h>
+
+// Print Factorial of Any number by using recussion.
+
+int factorial(int n);          // Declaration of function.
+
+int main ( ) {
+    int n;
+    printf("Enter The Number : ");
+    scanf("%d",&n);
+
+    printf("The Factorial is : %d",factorial(n));           // function call
+
+    return 0;
+}
+
+int factorial(int n){
+    if(n==0 || n== 1){
+        return 1;
+
+    } 
+  
+        
+            
+    
+    else{
+        int totalfact = n * factorial(n-1);              //Defination of function.
+        return totalfact;
+    }
+}
