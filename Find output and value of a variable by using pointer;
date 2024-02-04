@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+
+// find output and value of a variable by using pointer;
+
+int main(){
+  int *ptr;     // Address of a variable
+  int x;       // Normal variable 
+
+  ptr = &x;
+  *ptr = 0;
+  printf("The Value of X is : %d \n",x);
+  printf("The Adress of a variable : %d\n ",*ptr);         
+
+
+
+  return 0;
+}
