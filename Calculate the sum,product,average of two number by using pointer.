@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<math.h>
+
+// Calculate the sum,product,average of two number by using pointer
+
+void cal(int a,int b,int *sum, int *product,int *avg);
+
+int main () {
+
+  int a,b;
+  printf("Enter The Value Of A : ");
+  scanf("%d",&a);
+
+    printf("Enter The Value Of B : ");
+  scanf("%d",&b);
+int sum,product,avg;
+  cal(a,b,&sum,&product,&avg);
+
+  printf("\n Sum is : %d\n Product is : %d\n Average is : %d\n",sum,product,avg);
+
+
+
+
+
+
+  return 0;
+}
+void cal(int a,int b,int *sum, int *product,int *avg){
+  *sum = a+b;
+  *product = a*b;
+  *avg = (a+b)/2;
+}
