@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+void dowork(int a,int b,int h,int *cube,int *cuboid,int *rectangle);
+
+// Print Volume of cube and Cuboid,Area of Rectangle by using Pointer.
+
+int main() {
+    int a;
+    printf("Enter A : ");
+    scanf("%d",&a);
+
+    int b;
+      printf("Enter B : ");
+    scanf("%d",&b);
+
+    
+    int h;
+      printf("Enter B : ");
+    scanf("%d",&h);
+
+    int cube,cuboid,rectangle;
+    dowork(a,b,h,&cube,&cuboid,&rectangle);
+
+    printf("The volume of cube is  : %d\n The Volume of cuboid : %d\n The area of rectangle  is : %d\n",cube,cuboid,rectangle);
+
+
+
+
+
+    return 0;
+}
+
+void dowork(int a,int b,int h,int *cube,int *cuboid,int *rectangle){
+    *cube  = a*a*a;
+    *cuboid = a*b*h;
+    *rectangle = a*b*h ;
+
+}
