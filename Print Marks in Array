@@ -1,0 +1,35 @@
+#include<stdio.h>
+
+// Print Marks in Array.
+
+int main () {
+       int marks [4];
+       
+
+       printf("Enter English : ");
+       scanf("%d",&marks[0]);
+
+       
+       printf("Enter Physics : ");
+       scanf("%d",&marks[1]);
+
+       
+       printf("Enter Maths : ");
+       scanf("%d",&marks[2]);
+
+       
+       printf("Enter Chemistry : ");
+       scanf("%d",&marks[3]);
+
+
+       printf("The Marks in English is : %d\n The Marks in Physics is : %d\n The Marks in maths is : %d\n The Marks in chemistry is : %d\n",marks[0],marks[1],marks[2],marks[3]);
+      
+     
+
+
+
+    
+
+
+    return 0;
+}
