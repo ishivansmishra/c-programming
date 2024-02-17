@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+// Print total cost of 3 items by using Array.
+
+int main ( ){
+    
+    float price[3];
+    printf("Enter amount of 1st item : ");
+    scanf("%f",&price[0]);
+
+      printf("Enter amount of 2nd item : ");
+    scanf("%f",&price[1]);
+
+      printf("Enter amount of 3rd item : ");
+    scanf("%f",&price[2]);
+
+    printf("The Total Price of 1st item is : %f\n",price[0]+(0.18* price[0]));
+     printf("The Total Price of 2nd item is : %f\n",price[1]+(0.18* price[1]));
+      printf("The Total Price of 3rd item is : %f\n",price[2]+(0.18*price[2]));
+
+
+
+
+    return 0;
+}
