@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+
+// Print a function to reverse an array
+
+
+// Convert an array in reverse.
+int reversearr(int arr[],int n){
+    for(int i=0;i<n/2;i++){
+        int firstvalue = arr[i];
+        int secondvalue = arr[n-i-1];
+
+        arr[i] = secondvalue;
+        arr[n-i-1] = firstvalue;
+
+    }
+}
+// Print the Reverse Array.
+void printarr(int arr[],int n){
+    for(int i = 0;i<n;i++){
+        printf("%d \t",arr[i]);
+    }
+}
+
+int main () {
+    int arr[] = {1,2,3,4,5,6,7,8,9,10};
+    reversearr(arr,10);
+    printarr(arr,10);
+    return 0;
+}
