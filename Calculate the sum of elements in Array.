@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+// Calculate the sum of elements in Array.
+
+int main()
+{
+    int n;
+    int arr[100];
+    int sum = 0;
+
+    printf("Enter The no of Elements in Array :  ");
+    scanf("%d",&n);
+
+    printf("Enter The Elements in the Array \n ");
+    for(int i = 0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+
+    for(int i = 0;i<n;i++){
+        sum += arr[i];
+
+    }
+      printf("The Sum of Array is : %d",sum);
+
+        return 0;
+}
