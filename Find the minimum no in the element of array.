@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+// Find the minimum no in the element of array.
+
+int main()
+{
+    int n;
+    int arr[n];
+    int min_element;
+
+       
+
+    printf("Enter The Size of the Array : ");
+    scanf("%d", &n);
+
+    printf("Enter The array in element : \n");
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    min_element = arr[0];
+ 
+    for (int i = 1; i < n; i++)
+    {
+        if (arr[i] < min_element)
+        {
+            min_element = arr[i];
+        }
+        printf("The Minimum Element is an Array : %d\n",min_element);
+    }
+
+    return 0;
+}
