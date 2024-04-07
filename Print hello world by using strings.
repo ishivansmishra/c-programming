@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+// Print hello world by using strings.
+
+int main (){
+    char str[] = "Hello World";
+
+    printf("%s",str);
+
+    return 0;
+}
