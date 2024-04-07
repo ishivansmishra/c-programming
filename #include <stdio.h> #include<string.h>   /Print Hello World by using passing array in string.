@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<string.h>
+
+
+// Print Hello World by using passing array in string.
+
+void printstr(char str[])
+{
+    for (int i = 0; str[i] != 0; i++)
+    {
+        printf("%c",&str[i]);
+    }
+}
+
+int main()
+{
+    char str[] = "Hello World";
+    printf(str);
+
+    return 0;
+}
