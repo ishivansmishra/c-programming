@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<string.h>
+
+// Copied the two user defined in the the third string and print the output.
+
+int main (){
+    char str1[100],str2[100],str3[100];
+
+    printf("Enter the First string : ");
+    scanf("%s",str1);
+
+    printf("Enter the Second string : ");
+    scanf("%s",str2);
+
+    strcpy(str3,strcat(str1,str2));
+    printf("The Copied string is : %s",str3); 
+    return 0;
+}
