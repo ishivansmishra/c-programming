@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<string.h>
+
+
+// Reverse the string by a given user defined two string.
+
+int main (){
+    char str1[100],str2[100];
+
+    printf("Enter The string : ");
+    scanf("%s",str1);
+
+    printf("Enter The string : ");
+    scanf("%s",str2);
+
+    printf("The reverse of first string is : %s\n",strrev(str1));
+     printf("The reverse of Second string is : %s\n",strrev(str2));
+
+    return 0;
+}
