@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+
+//allow user to enter the two strings and them concatenate  them by saying that str1 is freind of str2 in c
+
+
+
+int main () {
+    char str1[100],str2[100];
+
+    printf("Enter The  First String : ");
+    scanf("%s",str1);
+
+    printf("Enter the second string : ");
+    scanf("%s",str2);
+
+    strcat(str1, " is the friend of ");
+
+    printf("The sentence is : %s",strcat(str1,str2));
+
+
+    return 0;
+}
