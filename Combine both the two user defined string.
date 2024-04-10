@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<string.h>
+
+// Combine both the two user defined string.
+
+
+int main (){
+    char str1[100],str2[100];
+
+    printf("Enter the value of first string : ");
+    scanf("%s",str1);
+
+    printf("Enter the value of Second string : ");
+    scanf("%s",str2);
+
+    printf("Combine both the string : %s",strcat(str1,str2));
+    return 0;
+}
