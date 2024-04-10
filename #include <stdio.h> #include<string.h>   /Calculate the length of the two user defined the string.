@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<string.h>
+
+// Calculate the length of the two user defined the string.
+
+int main (){
+    char str1[100],str2[100];
+
+    printf("Enter the input the value of first string : ");
+    scanf("%s",str1);
+
+    printf("Enter the input the value of Second string : ");
+    scanf("%s",str2);
+
+    printf("The length of first string : %d\n",strlen(str1));
+
+    printf("The length of Second string : %d\n",strlen(str2));
+
+    return 0;
+}
