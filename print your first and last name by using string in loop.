@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+// print your first and last name by using string in loop. 
+
+void printstr(char arr[])
+{
+    for (int i = 0; arr[i] != '\0'; i++)
+    {
+        printf("%c", arr[i]);
+    }
+    printf("\n");
+}
+
+int main()
+{
+    char first[] = "Shivansh";
+    char last[] = "Mishra";
+
+    printstr(first);
+    printstr(last);
+
+    return 0;
+}
