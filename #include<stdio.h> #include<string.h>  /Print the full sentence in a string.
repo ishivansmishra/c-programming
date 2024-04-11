@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<string.h>
+
+// Print the full sentence in a string.
+
+int main (){
+    char sentence[100] ;
+    scanf("%s",sentence);
+
+    fgets(sentence,50,stdin);
+    puts(sentence);
+
+    return 0;
+}
