@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+// Reverse the array of  n number .
+
+void reversearr(int arr[], int n)
+{
+    for (int i = 0; i < n / 2; i++)
+    {
+        int firstvalue = arr[i];
+        int secondvalue = arr[n - i - 1];
+
+        arr[i] = secondvalue;
+        arr[n - i - 1] = firstvalue;
+    }
+}
+void printarr(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+
+        printf("%d \t", arr[i]);
+    }
+}
+
+int main()
+{
+    int n;
+    printf("Enter The Size of Array : ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter The elments in the Array :  ");
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    reversearr(arr,n);
+    printarr(arr,n);
+  
+
+    return 0;
+}
