@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+
+// create a function to calculate the vowels in the user input character by using string .
+
+int countvowel(char word[])
+{
+    int count = 0;
+    for (int i = 0; word[i] != '\0'; i++)
+    {
+        if (word[i] == 'a' || word[i] == 'e' || word[i] == 'i' || word[i] == 'o' || word[i] == 'u')
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+int main()
+{
+    char word[100];
+    printf("Enter the Character : ");
+    gets(word);
+
+    printf("The Total vowel in the character is : %d", countvowel(word));
+
+    return 0;
+}
