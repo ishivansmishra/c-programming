@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+
+// Takes a string and return a sliced string from index n to m.
+
+void slice(char str[100], int n, int m)
+{
+    int i = n;
+    int j = 0;
+    char newstr[n - m - i];
+    for (i, j; i <= m; i++, j++)
+    {
+        newstr[j] = str[i];
+    }
+    newstr[j] = '\0';
+    puts(newstr);
+}
+
+int main()
+{
+
+    char str[100];
+    printf("Enter the character : ");
+    fgets(str, 100, stdin);
+
+    int n, m;
+    printf("Enter the index no of the character : ");
+    scanf("%d %d", &n, &m);
+
+    slice(str, n, m);
+
+    return 0;
+}
