@@ -1,2 +1,2 @@
 # c-programming.
-ALL PROBLEMS OF C PROGRAMMING.
+This repository contains solutions to various C programming problems.
