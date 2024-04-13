@@ -1,0 +1,64 @@
+#include<stdio.h>
+
+
+// Create a function to store the details of the student by using structure.
+
+struct student {
+    char name[100];
+    char fathername[100];
+    char mothername[100];
+    char email[100];
+    char address[100];
+    char id[100];
+    char mobileno[100];
+    char roll[100];
+    
+};
+
+int main (){
+    struct student s1;
+    s1.name;
+    printf("Enter The Students Name : ");
+    fgets(s1.name,100,stdin);
+
+    s1.fathername;
+    printf("Enter The Student's Father Name : ");
+    fgets(s1.fathername,100,stdin);
+
+    s1.mothername;
+    printf("Enter The Student's Mother Name : ");
+    fgets(s1.mothername,100,stdin);
+
+    s1.email;
+    printf("Enter The Students's Email : ");
+    fgets(s1.email,100,stdin);
+
+    s1.address;
+    printf("Enter The Address : ");
+    fgets(s1.address,100,stdin);
+
+    s1.id;
+    printf("Enter The Student's Id : ");
+    fgets(s1.id,100,stdin);
+
+
+    s1.mobileno;
+    printf("Enter The Student's Mobile NO : ");
+    scanf("%s",&s1.mobileno);
+
+    s1.roll;
+    printf("Enter The Student's Roll No : ");
+    scanf("%s",&s1.roll);
+
+ 
+    printf("The Students Name is : %s",s1.name);
+    printf("The Student's Father Name is : %s",s1.fathername);
+    printf("The Student's Mother Name is : %s",s1.mothername); 
+    printf("The Student's Email Id is : %s",s1.email);
+    printf("The Student's ID is : %s",s1.id);
+    printf("The Student's Mobile No is : %s\n",s1.mobileno);
+    printf("The Student's Roll No : %s",s1.roll);
+
+
+    return 0;
+}
