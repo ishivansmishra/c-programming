@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<string.h>
+
+// Create a function to find details of a student by use of pointer to structure.
+
+struct student {
+    char name[100];
+    int roll;
+    float cgpa;
+
+};
+
+int main (){
+    struct student s1;
+    s1.name;
+    printf("Enter the Name : ");
+    fgets(s1.name,100,stdin);
+
+    s1.roll;
+    printf("Enter The Roll : ");
+    scanf("%d",&s1.roll);
+
+    s1.cgpa;
+    printf("Enter the CGPA : ");
+    scanf("%f",&s1.cgpa);
+
+    struct student *ptr = &s1;
+
+    printf("The NAME is : %s\n",(*ptr).name);
+    printf("The Students Roll NO is : %d\n",(*ptr).roll);
+    printf("The CGPA is : %f\n",(*ptr).cgpa);
+
+
+    return 0;
+}
