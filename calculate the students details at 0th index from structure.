@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<string.h>
+
+// calculate the students details at 0th index from structure.
+
+struct student{
+    char name[200];
+    char roll[100];
+    char year[100];
+};
+
+int  main (){
+    struct student it;
+    it.name[0];
+    printf("Enter The Namxde : ");
+    fgets(it.name,200,stdin);
+
+    it.roll[0];
+    printf("Enter the Roll No : ");
+    fgets(it.roll,100,stdin);
+
+    it.year[0];
+    printf("Enter The Year : ");
+    fgets(it.year,100,stdin);
+
+    printf("The Studemts details : %s %s %s ",it.name,it.roll,it.year);
+    
+    return 0;
+}
