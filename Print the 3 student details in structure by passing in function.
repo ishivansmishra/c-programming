@@ -1,0 +1,88 @@
+#include<stdio.h>
+
+// Print the 3 student details in structure by passing in function.
+
+struct student
+{
+    char name[100];
+    char roll[100];
+    char year[100];
+};
+
+void print1(struct student s1)
+{
+    printf("Enter The name of student 1 : ");
+
+    gets(s1.name);
+    puts(s1.name);
+
+    printf("Enter The Roll No of Student 1 : ");
+
+    gets(s1.roll);
+    puts(s1.roll);
+
+    printf("Enter The Year of Student 1 : ");
+
+    gets(s1.year);
+    puts(s1.year);
+}
+
+void print2(struct student s2)
+{
+    printf("Enter The Name of student 2 : ");
+
+    gets(s2.name);
+    puts(s2.name);
+
+    printf("Enter The Roll No of Student 2 : ");
+    gets(s2.roll);
+    puts(s2.roll);
+
+    printf("Enter The Year of student 2 :  ");
+    gets(s2.year);
+    puts(s2.year);
+}
+
+void print3(struct student s3)
+{
+    printf("Enter the Name of student 3 :  ");
+
+    gets(s3.name);
+    puts(s3.name);
+
+    printf("Enter THe Roll No of student 3 : ");
+
+    gets(s3.roll);
+    puts(s3.roll);
+
+    printf("Enter The year of student 3 : ");
+
+    gets(s3.year);
+    puts(s3.year);
+}
+
+
+int main()
+{
+    struct student s1;
+    s1.name;
+    s1.roll;
+    s1.year;
+
+    print1(s1);
+
+    struct student s2;
+    s2.name;
+    s2.roll;
+    s2.year;
+
+    print2(s2);
+
+    struct student s3;
+    s3.name;
+    s3.roll;
+    s3.year;
+    print3(s3);
+
+    return 0;
+}
