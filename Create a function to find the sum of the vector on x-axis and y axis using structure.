@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+
+// Create a function to find the sum of the vector on x-axis and y axis using structure.
+
+struct vector {
+    double x;
+    double y;
+};
+
+void calculatesum(struct vector v1,struct vector v2,double sum){
+    double addvector1 = v1.x + v2.x;
+    double addvector2 = v1.y + v2.y;
+
+    printf("The sum of vector (x1+x2) is : %lf\n",addvector1);
+    printf("The sum of vector (y1+y2) is : %lf",addvector2);
+}
+
+int main (){
+    struct vector v1;
+    printf("Enter The value of x1 in x-axis : ");
+   
+    scanf("%lf",&v1.x);
+
+    printf("Enter The Value of y1 in y-axis : ");
+    scanf("%lf",&v1.y);
+
+    struct vector v2;
+    printf("Enter the value of x2 in x-axis : ");
+    scanf("%lf",&v2.x);
+
+    printf("Enter The value of y2 in y-axis : ");
+    scanf("%lf",&v2.y);
+
+    double sum = 0;
+    calculatesum(v1,v2,sum);
+
+    return 0;
+}
