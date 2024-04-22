@@ -1,0 +1,118 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <math.h>
+
+// Create a function to Print address of 5 people given by a user in structure using typedef keyword.
+
+typedef struct address
+{
+    char name[100];
+    char house[100];
+    char city[100];
+    char state[100];
+    char country[100];
+} ad;
+
+void printadd(ad s1)
+{
+    printf("The Address is : %s %s %s %s %s\n", s1.name, s1.house, s1.city, s1.state, s1.country);
+}
+
+int main()
+{
+    ad s1[5];
+
+    printf("Enter The Info of 1st person\n");
+
+    printf("Enter The Name of 1st person : ");
+    gets(s1[0].name);
+
+    printf("Enter The house name of 1st person :  ");
+    gets(s1[0].house);
+
+    printf("Enter The City Name of 1st person : ");
+    gets(s1[0].city);
+
+    printf("Enter The state Name of 1st person : ");
+    gets(s1[0].state);
+
+    printf("Enter The Country Name of 1st person : ");
+    gets(s1[0].country);
+
+    printf("Enter The Info of 2nd person\n");
+
+    printf("Enter The Name of 2nd person : ");
+    gets(s1[1].name);
+
+    printf("Enter The house name of 2nd person :  ");
+    gets(s1[1].house);
+
+    printf("Enter The City Name of 2nd person : ");
+    gets(s1[1].city);
+
+    printf("Enter The state Name of 2nd person : ");
+    gets(s1[1].state);
+
+    printf("Enter The Country Name of 2nd person : ");
+    gets(s1[1].country);
+
+    printf("Enter The Info of 3rd person\n");
+
+    printf("Enter The Name of 3rd person : ");
+    gets(s1[2].name);
+
+    printf("Enter The house name of 3rd person :  ");
+    gets(s1[2].house);
+
+    printf("Enter The City Name of 3rd person : ");
+    gets(s1[2].city);
+
+    printf("Enter The state Name of 3rd person : ");
+    gets(s1[2].state);
+
+    printf("Enter The Country Name of 3rd person : ");
+    gets(s1[2].country);
+
+    printf("Enter The Info of 4th person\n");
+
+    printf("Enter The Name of 4th person : ");
+    gets(s1[3].name);
+
+    printf("Enter The house name of 4th person :  ");
+    gets(s1[3].house);
+
+    printf("Enter The City Name of 4th person : ");
+    gets(s1[3].city);
+
+    printf("Enter The state Name of 4th person : ");
+    gets(s1[3].state);
+
+    printf("Enter The Country Name of 4th person : ");
+    gets(s1[3].country);
+
+    printf("Enter The Info of 5th person\n");
+
+    printf("Enter The Name of 5th person : ");
+    gets(s1[4].name);
+
+    printf("Enter The house name of 5th person :  ");
+    gets(s1[4].house);
+
+    printf("Enter The City Name of 5th person : ");
+    gets(s1[4].city);
+
+    printf("Enter The state Name of 5th person : ");
+    gets(s1[4].state);
+
+    printf("Enter The Country Name of 5th person : ");
+    gets(s1[4].country);
+
+    printadd(s1[0]);
+    printadd(s1[1]);
+    printadd(s1[2]);
+    printadd(s1[3]);
+    printadd(s1[4]);
+
+    return 0;
+}
