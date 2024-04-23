@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<string.h>
+
+// Make a structure to store details of a bank holder.
+
+typedef struct bankaccountdetails {
+    char name [100];
+    double accountno;
+    char address[100];
+    double balance;
+}bank;
+
+void printdetails(bank b){
+    printf("The Bank Details of the Holder is :\n %s\n %s\n %lf\n%lf\n",b.name,b.address,b.accountno,b.balance);
+}
+
+int main (){
+    bank b;
+    
+    printf("Enter The Deatails of ABC Bank\n");
+
+
+    printf("Enter The Name of BAnk Holder : ");
+    fgets(b.name,100,stdin);
+
+      printf("Enter The Address of the Bank Holder : ");
+   gets(b.address);
+
+
+    printf("Enter The Account No of Bank holder : ");
+    scanf("%lf",&b.accountno);
+    
+  
+    printf("Enter The Balance Amount of the Bank Holder : ");
+    scanf("%lf",&b.balance);
+
+    printdetails(b);
+
+
+
+}
