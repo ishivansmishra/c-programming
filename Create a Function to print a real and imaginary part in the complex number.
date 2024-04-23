@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+
+// Create a Function to print a real and imaginary part in the complex number.
+
+struct complex
+{
+    double real;
+    double imaginary;
+};
+
+void printcnum(struct complex v, struct complex *ptr)
+{
+    printf("The Real Part in the complex nmber : %lf\n", ptr->real);
+    printf("The Imaginary Part in the Complex nu,ber : %lf", ptr->imaginary);
+}
+
+int main()
+{
+    double i, j;
+    printf("Enter The Two Complex Number :\n");
+    scanf("%lf %lf", &i, &j);
+
+    struct complex v = {i, j};
+    struct complex *ptr = &v;
+
+    printcnum(v, ptr);
+
+    return 0;
+}
