@@ -1,0 +1,202 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+
+// Make a structure for details of college including students,teachers,and other staff by using alias.
+
+typedef struct studentdetails
+{
+    char name[100];
+    char address[100];
+    int year;
+    int rollno;
+
+} stu;
+
+typedef struct teacherdetails
+{
+    char name[100];
+    char address[100];
+    char department[100];
+    char experince[100];
+    int id;
+} tea;
+
+typedef struct otherstaffdetails
+{
+    char name[100];
+    char designation[100];
+    char department[100];
+    int id;
+
+} oth;
+
+void printit(stu it)
+{
+    printf("The Details of Information Technology Students is : %s %s %d %d", it.name, it.address, it.year, it.rollno);
+}
+
+void printcse(stu cse)
+{
+    printf("The Details of Computer Science Students is : %s %s %d %d", cse.name, cse.address, cse.year, cse.rollno);
+}
+
+void printel(stu el)
+{
+    printf("The Details of Electronics Students is : %s %s %d %d", el.name, el.address, el.year, el.rollno);
+}
+
+void printee(stu ee)
+{
+    printf("The Details of Electical Students is : %s %s %d %d", ee.name, ee.address, ee.year, ee.rollno);
+}
+
+void printtea(tea g)
+{
+    printf("The Details Of the Teacher is : %s %s %s %s %d", g.name, g.address, g.department, g.experince, g.id);
+}
+
+void printstaff(oth s)
+{
+    printf("The Details Of the Staff is : %s %s %s %d", s.name, s.designation, s.department, s.id);
+}
+
+int main()
+{
+    int no;
+    stu it;
+    stu cse;
+    stu el;
+    stu ee;
+
+    tea g;
+
+    oth s;
+
+    printf("1 For Students\n 2 for Teachers \n 3 for other staff\n Enter No between 1 to 3 : ");
+    scanf("%d", &no);
+
+    if (no == 1)
+    {
+        int a;
+        printf("You Entered 1 for Student Details\n Again Entered A number for branch\n 1 for Information Technology\n 2 for Computer Science \n 3 for Electronics\n 4 for Electrical\n Enter Number between 1 to 4 :  ");
+        scanf("%d", &a);
+        if (a == 1)
+        {
+
+            printf("You Have Entered no 1 for information technology so below entered the details of the students\n");
+
+            printf("Enter The Name : ");
+            scanf("%s", &it.name);
+
+            printf("Enter The Address of the Student : ");
+            scanf("%s", &it.address);
+
+            printf("Enter The Year of The student which he/she have study : ");
+            scanf("%d", &it.year);
+
+            printf("Enter The Roll No of The Student : ");
+            scanf("%d", &it.rollno);
+
+            printit(it);
+        }
+        if (a == 2)
+        {
+            printf("You Have Entered no 2 for Computer Science so below entered the details of the students\n");
+            printf("Enter The Name : ");
+            scanf("%s", &cse.name);
+
+            printf("Enter The Address of the Student : ");
+            scanf("%s", &cse.address);
+
+            printf("Enter The Year of The student which he/she have study : ");
+            scanf("%d", &cse.year);
+
+            printf("Enter The Roll No of The Student : ");
+            scanf("%d", &cse.rollno);
+
+            printcse(cse);
+        }
+        if (a == 3)
+        {
+            printf("You Have Entered no 3 for Electronics so below entered the details of the students\n");
+            printf("Enter The Name : ");
+            scanf("%s", &el.name);
+
+            printf("Enter The Address of the Student : ");
+            scanf("%s", &el.address);
+
+            printf("Enter The Year of The student which he/she have study : ");
+            scanf("%d", &el.year);
+
+            printf("Enter The Roll No of The Student : ");
+            scanf("%d", &el.rollno);
+
+            printel(el);
+        }
+        if (a == 4)
+        {
+            printf("You Have Entered no 4 for Electrical so below entered the details of the students\n");
+            printf("Enter The Name : ");
+            scanf("%s", &ee.name);
+
+            printf("Enter The Address of the Student : ");
+            scanf("%s", &ee.address);
+
+            printf("Enter The Year of The student which he/she have study : ");
+            scanf("%d", &ee.year);
+
+            printf("Enter The Roll No of The Student : ");
+            scanf("%d", &ee.rollno);
+
+            printee(ee);
+        }
+        else
+        {
+            printf("Inavlid No\n Please Enter a no between 1 to 4 for the student details");
+        }
+    }
+    if (no == 2)
+    {
+        printf("You Have Entered 2 For Teachers Details so here you have to entered the details of the tecaher.\n");
+
+        printf("Enter the Name of The teacher : ");
+        scanf("%s", &g.name);
+
+        printf("Enter The Address Of The Teacher : ");
+        scanf("%s", &g.address);
+
+        printf("Enter The Departament of the Teacher : ");
+        scanf("%s", &g.department);
+
+        printf("Enter The Experince of The Teacher : ");
+        scanf("%s", &g.experince);
+
+        printf("Enter the Teacher id of the Teacher : ");
+        scanf("%d", &g.id);
+
+        printtea(g);
+    }
+    if (no == 3)
+    {
+        printf("You Have Entered 3 For other staff Details so here you have to entered the details of the other staff.\n ");
+
+        printf("Enter The Name of Staff : ");
+        scanf("%s", &s.name);
+
+        printf("Enter The Designation of The Staff : ");
+        scanf("%s", &s.designation);
+
+        printf("Enter The Department that Staff have work : ");
+        scanf("%s", &s.department);
+
+        printf("Enter The Staff id of the staff  : ");
+        scanf("%d", &s.id);
+    }
+    else
+    {
+        printf("Invalid no\n");
+        printf("Please Enter A valid no for the details between 1 to 3 .");
+    }
+    return 0;
+}
