@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+// Make an union of student details which shared either name or roll no of students.
+union student {
+    char name[200];
+    int rollno;
+};
+
+int main (){
+    union student s1;
+   
+    printf("Enter The Name of the student : ");
+    scanf("%s",&s1.name);
+
+   printf("The Deatils is : %s %d",s1.name,s1.rollno);
+
+
+    return 0;
+}
+}
