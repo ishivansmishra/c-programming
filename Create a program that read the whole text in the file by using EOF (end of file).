@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+// Create a program that read the whole text in the file by using EOF (end of file).
+
+int main (){
+    FILE *fptr;
+    fptr = fopen("she.txt","r");
+
+    char ch;
+    ch = fgetc(fptr);
+
+   do {
+        printf("%c",ch);
+        ch = fgetc(fptr);
+    } while(ch!=EOF);
+    printf("\n");
+    return 0;
+}
