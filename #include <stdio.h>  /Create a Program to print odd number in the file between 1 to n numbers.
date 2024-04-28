@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+// Create a Program to print odd number in the file between 1 to n numbers.
+
+int main()
+{
+  FILE *fptr;
+  fptr = fopen("file.txt", "w");
+
+  int no;
+  printf("Enter the number : ");
+  scanf("%d", &no);
+
+  for (int i = 0; i <= no; i++)
+  {
+    if (i % 2 != 0)
+    {
+      fprintf(fptr, "The odd no between 1 to n is : %d\n", i);
+    }
+  }
+  return 0;
+}
