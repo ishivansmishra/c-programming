@@ -1,0 +1,80 @@
+#include<stdio.h>
+#include<string.h>
+
+//Create a program to manage a college details of 3 students in the File.
+
+typedef struct studentdetails {
+  char name[100];
+  char department[100];
+  int id;
+  double roll;
+}stu;
+
+void main (){
+  FILE *fptr;
+  fptr = fopen("file.txt","w");
+  stu s1,s2,s3;
+
+  printf("Enter The Name of student 1 : ");
+  gets(s1.name);
+
+  printf("Enter The Departent of the student 1 : ");
+  gets(s1.department);
+
+  printf("Enter College id of student 1 : ");
+  scanf("%d",&s1.id);
+
+  printf("Enter The Roll No of student 1 : ");
+  scanf("%d",&s1.roll);
+  getchar();
+
+  printf("Enter The Name of student 2 : ");
+  gets(s2.name);
+
+  printf("Enter The Departent of the student 2: ");
+  gets(s2.department);
+
+  printf("Enter College id of student 2 : ");
+  scanf("%d",&s2.id);
+
+  printf("Enter The Roll No of student 2 : ");
+  scanf("%d",&s2.roll);
+  getchar();
+
+   printf("Enter The Name of student 3 : ");
+  gets(s3.name);
+
+  printf("Enter The Departent of the student 3 : ");
+  gets(s3.department);
+
+  printf("Enter College id of student 3 : ");
+  scanf("%d",&s3.id);
+
+  printf("Enter The Roll No of student 3 : ");
+  scanf("%d",&s3.roll);
+  getchar();
+
+  fprintf(fptr,"The Name of student 1 is : %s\n",s1.name);
+  fprintf(fptr,"The Department of student 1 is : %s\n",s1.department);
+  fprintf(fptr,"The College ID of student 1 is : %d\n",s1.id);
+  fprintf(fptr,"The Roll No of student 1 is : %d\n",s1.roll);
+
+    fprintf(fptr,"The Name of student 2 is : %s\n",s2.name);
+  fprintf(fptr,"The Department of student 2 is : %s\n",s2.department);
+  fprintf(fptr,"The College ID of student 2 is : %d\n",s2.id);
+  fprintf(fptr,"The Roll No of student 2 is : %d\n",s2.roll);
+
+    fprintf(fptr,"The Name of student 3 is : %s\n",s3.name);
+  fprintf(fptr,"The Department of student 3 is : %s\n",s3.department);
+  fprintf(fptr,"The College ID of student 3 is : %d\n",s3.id);
+  fprintf(fptr,"The Roll No of student 3 is : %d\n",s3.roll);
+
+  fclose(fptr);
+
+  
+
+
+
+
+
+}
