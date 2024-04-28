@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+
+// Create a program to take input from the file and print the string.
+
+int main (){
+    FILE *fptr;
+    fptr = fopen("file.txt","r");
+
+    char ch[100];
+    while(fgets(ch,100,fptr)!= NULL ){
+        printf("%s",ch);
+    }
+
+  fclose(fptr);
+  return 0;
+}
