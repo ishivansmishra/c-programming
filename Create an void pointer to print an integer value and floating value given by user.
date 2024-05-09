@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+
+// create an void pointer to print an integer value and floating value given by user.
+
+int main (){
+    int a;
+    printf("Enter The No a in integer value : ");
+    scanf("%d",&a);
+
+    int b;
+    printf("Enter The no b in floating value : ");
+    scanf("%f",&b);
+
+    void *ptr ;
+    ptr = &a;
+
+    printf("The Value  of A is : %d\n",(*(int*)ptr));
+    
+    ptr = &b;
+    printf("The Value of B is : %f",(*(float*)ptr));
+
+
+    return 0;
+}
