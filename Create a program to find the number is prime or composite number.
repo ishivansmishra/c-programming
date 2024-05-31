@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<math.h>
+
+// Create a program to find the number is prime or composite number.
+
+int main()
+{
+    int n;
+    printf("Enter The Number : ");
+    scanf("%d", &n);
+
+    for (int i = 2; i < n - 1; i++)
+    {
+        if (n % i == 0)
+        {
+            printf("The Number is Composite Number.");
+            break;
+        }
+
+        else
+        {
+            printf("The Number is Prime Number.");
+            break;
+        }
+    }
+
+    return 0;
+}
