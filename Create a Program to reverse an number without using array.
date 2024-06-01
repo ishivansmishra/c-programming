@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+
+// Create a Program to reverse an number without using array.
+
+int main (){
+    int n;
+    printf("Enter The Number N : ");
+    scanf("%d",&n);
+
+    int r = 0;
+    while(n>0){
+        r = r+n%10;
+        r = r*10;
+        n = n/10;
+    }
+    r = r/10;
+    printf("The Reverse Of Given number is %d",r);
+
+
+    return 0;
+}
