@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+
+int factorial(int x)
+{
+    int fact = 1;
+    for (int i = 2; i <= x; i++)
+    {
+        fact = fact * i;
+    }
+    return fact;
+}
+
+int permutation(int n, int r)
+{
+    return factorial(n) / factorial(n - r);
+}
+
+int main()
+{
+    int n;
+    printf("Enter The Value of N : ");
+    scanf("%d", &n);
+
+    int r;
+    printf("Enter The Value of R : ");
+    scanf("%d", &r);
+
+    printf("The Permutation are : %d", permutation(n, r));
+
+    return 0;
+}
