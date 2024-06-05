@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void decreasingno(int n)
+{
+    if (n == 0)
+    {
+        return;
+    }
+    printf("%d\n", n);
+    decreasingno(n - 1);
+    return;
+}
+
+int main()
+{
+    int n;
+    printf("Enter The Value of n : ");
+    scanf("%d", &n);
+
+    decreasingno(n);
+
+    return 0;
+}
